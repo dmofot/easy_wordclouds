@@ -23,7 +23,7 @@ These examples should preferably be run in a virtualenv to avoid installing a bu
 `pip install virtualenv`  
 
 Setup your virtualenv project:  
-`virtualenv venv --distribute`
+`virtualenv venv`
 
 Activate your virtualenv project:  
 `source venv/bin/activate`
