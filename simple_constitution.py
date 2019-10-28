@@ -1,25 +1,26 @@
 # # Word Cloud
 # =============================
-# 
+#
 # Generating a square word cloud from the US constitution using default arguments.
 #
-# Wordcloud (`pip install wordcloud`) requires PIL/Pillow (`pip install pillow`) 
+# Wordcloud (`pip install wordcloud`) requires PIL/Pillow (`pip install pillow`)
 # and numpy (`pip install numpy`) to be installed.
-# 
+#
 # To install all packages, use `pip install -r requirements.txt`
 
 # Imports
 from os import path
+
 from wordcloud import WordCloud
 
 # Set path
-d = path.dirname('__file__')
+d = path.dirname("__file__")
 
 # Read the whole text
-text = open(path.join(d, 'constitution.txt')).read()
+text = open(path.join(d, "constitution.txt")).read()
 
 # Setup and generate wordcloud
-# Additional wordcloud parameters here: http://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html#wordcloud.WordCloud
+# Additional wordcloud parameters here: https://git.io/Je08q
 wc = WordCloud().generate(text)
 
 # Save word cloud to file
